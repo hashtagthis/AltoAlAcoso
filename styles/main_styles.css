@@ -1016,7 +1016,7 @@ section {
 .services {
     width: 100%;
     padding-top: 80px;
-    padding-bottom: 124px;
+    padding-bottom: 40px;
 }
 
 .section_title h1 {
@@ -1040,7 +1040,6 @@ section {
 }
 
 .services_slider_container {
-    margin-top: 70px;
     width: 100%;
     height: 663px;
     -webkit-transform-style: preserve-3d;
@@ -1058,16 +1057,15 @@ section {
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 1920px;
-    height: 663px;
+    height: 550px;
 }
 
 .services_slider {
-    height: 663px;
+    height: 550px;
 }
 
 .services_slider .owl-stage-outer {
     padding-top: 20px;
-    padding-bottom: 60px;
 }
 
 .services_slider .owl-stage {
@@ -1115,21 +1113,16 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 475px;
+    height: 400px;
     max-width: 100%;
     box-shadow: 0px 30px 59px rgba(24, 29, 33, 0.23);
-    padding-left: 75px;
-    padding-right: 60px;
+    padding-left: 35px;
+    padding-right: 35px;
     -webkit-transition: all 600ms ease;
     -moz-transition: all 600ms ease;
     -ms-transition: all 600ms ease;
     -o-transition: all 600ms ease;
     transition: all 600ms ease;
-    background: #ffc5c1;
-}
-
-.services_slider .owl-item.active.center .services_item_inner {
-    height: 663px;
 }
 
 .service_item_content {
@@ -1197,16 +1190,20 @@ section {
 }
 
 .service_item_icon {
-    position: absolute;
-    top: -70px;
-    left: 0;
+    position: relative;
     width: 65px;
     height: 65px;
+    margin-bottom: 20px;
     -webkit-transition: all 600ms ease;
     -moz-transition: all 600ms ease;
     -ms-transition: all 600ms ease;
     -o-transition: all 600ms ease;
     transition: all 600ms ease;
+}
+
+.services_slider .owl-item .service_item_icon {
+    background: #e01c0d;
+    border-radius: 50%;
 }
 
 .service_item_icon .icon {
@@ -1218,10 +1215,6 @@ section {
 .services_slider .owl-item.active.center .services_item_inner .service_item_icon .icon {
     font-size: 50px;
     color: #841007;
-}
-
-.services_slider .owl-item.center .services_item .services_item_inner .service_item_icon {
-    top: -102px;
 }
 
 .services_slider .owl-dots {

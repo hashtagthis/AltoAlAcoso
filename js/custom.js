@@ -253,8 +253,8 @@ $(document).ready(function () {
 				{
 					loop: true,
 					center: true,
-					margin: 67,
-					stagePadding: 153,
+					margin: 10,
+					stagePadding: 80,
 					mouseDrag: true,
 					dots: true,
 					dotsSpeed: 600,
@@ -273,13 +273,6 @@ $(document).ready(function () {
 							items: 3,
 							center: true,
 							stagePadding: 350
-						},
-						1440:
-						{
-							items: 4,
-							margin: 67,
-							stagePadding: 153,
-							dots: true,
 						}
 					}
 				});
@@ -312,6 +305,14 @@ $(document).ready(function () {
 			items: 1,
 			autoHeight: false,
 			margin: 15
+		});
+		let sliderItems = $('.politica_slider').children();
+		let cambioImagen = $('.text_line_image img');
+		politicaSlider.on('translated.owl.carousel', function (event) {
+			for (let i = 0; i < sliderItems.length; i++) {
+				sliderItems[i].data('id');
+				cambioImagen.attr('src', 'imagen_slider_' + i);
+			}
 		});
 	}
 
