@@ -306,13 +306,12 @@ $(document).ready(function () {
 			autoHeight: false,
 			margin: 15
 		});
-		let sliderItems = $('.politica_slider').children();
 		let cambioImagen = $('.text_line_image img');
+		let sliderGeneral = $('.politica_slider .owl-stage-outer');
 		politicaSlider.on('translated.owl.carousel', function (event) {
-			for (let i = 0; i < sliderItems.length; i++) {
-				sliderItems[i].data('id');
-				cambioImagen.attr('src', 'imagen_slider_' + i);
-			}
+			let itemSlide = $('.politica_item[data-id="' + event.item.index + '"]').innerHeight();
+			cambioImagen.attr('src', 'images/imagen_referente_' + event.item.index + '.png');
+			sliderGeneral.css('height', itemSlide);
 		});
 	}
 

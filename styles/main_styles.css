@@ -1066,6 +1066,7 @@ section {
 
 .services_slider .owl-stage-outer {
     padding-top: 20px;
+    transition: all ease-in-out 1s;
 }
 
 .services_slider .owl-stage {
