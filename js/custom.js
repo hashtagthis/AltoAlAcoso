@@ -94,12 +94,10 @@ $(document).ready(function () {
 				{
 					items: 1,
 					loop: true,
-					autoplay: false,
-					animateOut: 'slideOutDown',
-					animateIn: 'flipInX',
-					dots: false,
+					autoplay: true,
+					dots: true,
 					nav: false,
-					autoplayTimeout: 5000,
+					autoplayTimeout: 3000,
 					autoplaySpeed: 800,
 					smartSpeed: 800
 				});
@@ -303,7 +301,7 @@ $(document).ready(function () {
 			dots: true,
 			dotsSpeed: 600,
 			items: 1,
-			autoHeight: false,
+			autoHeight: true,
 			margin: 15
 		});
 		let cambioImagen = $('.text_line_image img');

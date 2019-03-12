@@ -526,6 +526,17 @@ section {
     height: 100%;
 }
 
+.hero_slider .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.hero_slider .owl-dots .owl-dot.active span {
+    background: #ce190b;
+}
+
 .hero_slider_item {
     height: 100%;
 }
